@@ -1,0 +1,147 @@
+  .body::-webkit-scrollbar{
+     width: .3rem;
+   }
+   .body::-webkit-scrollbar-track{
+     background-color:#040404  ;
+   }
+   
+   .body::-webkit-scrollbar-thumb{
+     background-color: rgb(185, 178, 185);
+     border-radius: 4px;
+   }
+   .body::-webkit-scrollbar-thumb:active{
+     background-color: rgba(185, 178, 185,.5);
+     
+   }
+.body {
+     border: 1px solid #000;
+     height: 100vh;
+     background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
+     padding: 30px;
+     overflow: scroll;
+     overflow-y: overlay;
+     color: #fff;
+}
+
+.body__info {
+     display: flex;
+     align-items: flex-end;
+     padding: 10px;
+}
+
+.body__shuffle {
+     font-size: 80px !important;
+     margin-left: 50px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+}
+
+.body__icons {
+     display: flex;
+     align-items: center;
+}
+
+.body__icons>.MuiSvgIcon-root {
+     margin-right: 20px;
+}
+
+.body__shuffle:hover {
+     transition: 100ms transform ease-in;
+     transform: scale(1.08);
+}
+
+.body__background {
+     position: absolute;
+     top: 13vh;
+     right: 0;
+     opacity: 0.4;
+     height: 80%;
+     width: 80%;
+     background-color: black;
+}
+
+.body__songs {
+     z-index: 1;
+     margin: 20px -30px;
+}
+
+.body__info>img {
+     height: 20vw;
+     margin: 0 20px;
+     box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+
+.body__infoText {
+     flex: 1;
+     color: #fff;
+}
+.body__infoText storng{
+     font-weight: 700;
+     font-size: 12px;
+    margin-top: 4px;
+    text-transform: uppercase;
+}
+.body__infoText>h2 {
+     text-transform: capitalize;
+     margin-bottom: 10px;
+     padding: 0.08em 0px;
+     font-size: 96px;
+     line-height: 96px;
+     visibility: visible;
+}
+
+.body__infoText>p {
+     font-size: 14px;
+}
+.songRow {
+     margin-left: 20px;
+     padding: 20px;
+     display: flex;
+     align-items: center;
+     z-index: 100;
+     color: white;
+   }
+   
+   .songRow:hover {
+     cursor: pointer;
+     background-color: black;
+     opacity: 0.8;
+   }
+   
+   .songRow__info {
+     margin-left: 20px;
+   }
+   
+   .songRow__info > h1 {
+     font-size: 16px;
+   }
+   
+   .songRow__info > p {
+     font-size: 14px;
+     margin-top: 3px;
+     color: gray;
+   }
+   
+   .songRow__album {
+     height: 40px;
+     width: 40px;
+   }
+
+   @media (max-width:600px) {
+     .body__info>img{
+          margin-right: auto;
+     }
+     .body__info{
+          padding: 10px 0;
+     }
+     .body__infoText{
+          width: 100%;
+          margin: 10px 0;
+     }
+     .body__infoText h2{
+          display: none;
+     }
+     .body__info{
+          flex-direction: column;
+     }
+   }

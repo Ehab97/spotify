@@ -1,0 +1,163 @@
+.sidebar {
+  height: 100vh;
+  border: 1px solid #000;
+  background-color: #040404 !important;
+  color: #fff;
+  min-width: 230px;
+  padding: 0 10px;
+}
+
+.sidebar__logo {
+  width: 100px;
+  padding: 10px;
+  margin-right: auto;
+}
+
+.sidebarOption {
+  color: grey;
+  height: 40px;
+  cursor: pointer;
+  transition: 200ms color ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.sidebarOption:hover {
+  color: white;
+}
+
+.sidebar_title {
+  text-transform: capitalize;
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.sidebar hr {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.sidebarOption>p {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.sidebarOption__icon {
+  padding: 0 10px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 65px;
+  background-color: #282828;
+  padding: 20px 0;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__left {
+  flex: 0.5;
+  display: flex;
+  background-color: white;
+  padding: 10px;
+  border-radius: 30px;
+  color: gray;
+  align-items: center;
+}
+
+.header__left>input {
+  border: none;
+  width: 100%;
+}
+
+.header__right>h4 {
+  margin-left: 10px;
+}
+
+.footer__right * .MuiSlider-root {
+  color: green;
+}
+
+.footer__left {
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 300px;
+  flex: 0.3;
+}
+
+.footer__green {
+  color: #1ed15e;
+}
+
+.footer__center {
+  flex: 0.4;
+  max-width: 300px;
+  padding: 0 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__center>* {
+  margin: 10px auto;
+}
+
+.footer__icon:hover,
+.footer__green:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2) !important;
+}
+
+.footer__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  flex: 0.3;
+}
+
+.footer__albumLogo {
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  object-fit: contain;
+}
+
+.footer__songInfo>h4 {
+  margin-bottom: 5px;
+}
+
+.footer__songInfo>p {
+  font-size: 12px;
+}
+@media (max-width:600px) {
+  .header{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header__left {
+    margin-bottom: 10px;
+  }
+  .sidebar hr {
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 5px;}
+}

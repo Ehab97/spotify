@@ -1,0 +1,11 @@
+main{
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     background-color: black;
+}
+.player{
+     width: 100%;
+     contain: content;
+     height: 100vh;
+}
